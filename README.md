@@ -1,4 +1,4 @@
-# jacoco-android-playground
+# jacoco-android-code coverge
 Playground Android project to test [jacoco-report](https://github.com/Madrapps/jacoco-report) github action
 
 ### Running Code Coverage at Module level
