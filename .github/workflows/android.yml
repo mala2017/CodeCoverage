@@ -1,9 +1,5 @@
 name: Production Builds
-
 on:
-  pull_request:
-    branches:
-      - "development"
   workflow_dispatch:
     inputs:
       name:
@@ -95,4 +91,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
            name: release-artifacts
-           path: app/build/outputs/apk/prod/debug/app-debug.apk
+           path: ${{ steps.releaseApk.outputs.apkfile }}
