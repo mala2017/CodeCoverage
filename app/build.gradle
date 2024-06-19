@@ -6,8 +6,7 @@ plugins {
 apply from: '../jacoco/modules.gradle'
 
 android {
-    namespace = "com.mr.codecoverage"
-
+    namespace  "com.mr.codecoverage"
     compileSdk 34
 
     defaultConfig {
