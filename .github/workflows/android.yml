@@ -1,4 +1,11 @@
 name: Production Builds
+
+on:
+  pull_request:
+    branches:
+      - "development"
+
+      
 on:
   workflow_dispatch:
     inputs:
@@ -24,7 +31,7 @@ jobs:
       - name: Setup Java
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin'
+          distribution: 'adopt'
           java-version: 17
 
       - name: Setup Android SDK
