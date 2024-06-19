@@ -12,4 +12,9 @@ class MainViewModelTest {
         val actual = viewModel.validate("admin")
         Assert.assertTrue(actual)
     }
+    @Test
+    fun testVerifyAccess(){
+        val actual = viewModel.verifyAccess("super-admin")
+        Assert.assertTrue(actual)
+    }
 }
